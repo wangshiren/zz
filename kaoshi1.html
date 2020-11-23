@@ -1,0 +1,673 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>201916180304王诗人</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color:  rgb(95, 160, 135);
+
+        }
+
+        .spacebar {
+            width: 100%;
+            height: 10px;
+            overflow: hidden; 
+            clear: both;
+        }
+
+        #container {
+            /*background: #ccc;*/
+            width: 1280px;
+            /*height: 720px;*/
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        header {
+            width: 100%;
+            /*height: 150px;*/
+            /*margin-bottom: 10px;*/
+            /*background: #b92c28;*/
+        }
+
+        #logo {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin-left: 20px;
+            /*background: #999;*/
+            overflow: hidden;
+        }
+
+        #banner {
+            float: left;
+            width: 800px;
+            height: 100px;
+            margin: 0 20px 0 20px;
+            background: #afd9ee;
+        }
+
+        #tools {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin-right: 20px;
+            background: rgba(25, 124, 91, 0.459);
+        }
+
+        nav {
+            width: 100%;
+            height: 30px;
+            background: url("logo/whitebar.png");
+            /*background: blue;*/
+            /*background-color:#2198bf;*/
+        }
+
+        nav>ul {
+            margin: 0;
+            list-style: none;
+            text-align: right;
+        }
+
+        nav>ul>li {
+            padding: 0 10px 0 10px;
+            line-height: 30px;
+            border-left: 1px dashed #8d8c8c;
+            /*width: 80px;*/
+            display: inline;
+            height: 100%;
+            width: 100%;
+        }
+
+        nav>ul>li:hover {
+            border-bottom: 3px solid #2e6da4;
+        }
+
+        nav>ul>li>a {
+            /*font-size: 15px;*/
+            text-decoration: none;
+            color: #333333;
+        }
+
+        nav>ul>li>a:hover, nav>ul>li>a:active {
+            color: #000;
+        }
+
+
+        /*nav>ul>li>a:link, nav>ul>li>a:visited {*/
+            /*width:120px;*/
+            /*font-weight:bold;*/
+            /*color:#FFFFFF;*/
+            /*background-color:#2198bf;*/
+            /*text-align:center;*/
+            /*padding:4px;*/
+            /*text-decoration:none;*/
+        /*}*/
+
+        /*nav>ul>li>a:hover, nav>ul>li>a:active {*/
+            /*background-color:#1A7A99;*/
+        /*}*/
+
+
+        /*#content {*/
+            /*width: 100%;*/
+            /*!*height: 500px;*!*/
+            /*!*background: #0099ff;*!*/
+            /*!*margin-bottom: 10px;*!*/
+        /*}*/
+
+        section {
+            float: left;
+            width: 1000px;
+            /*height: 600px;*/
+            /*background: yellow;*/
+        }
+
+        .leftbox{
+            float: left;
+            width: 300px;
+            /*height: 280px;*/
+            /*background-color: #cccccc;*/
+        }
+        
+        .rightbox {
+            float: right;
+            width: 690px;
+            /*height: 280px;*/
+            /*background-color: #ccc;*/
+        }
+
+        .title {
+            width: 100%;
+            height: 28px;
+            /*background-color: red;*/
+            background: url("logo/ShadowBar.png") no-repeat top right;
+        }
+
+        .title h3 {
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 28px;
+            background: url("logo/ShadowBar.png") no-repeat top left;
+        }
+
+        article {
+            /*width: 100%;*/
+            height: 252px;
+            /*background-color: yellow;*/
+            border: 1px solid rgb(9, 43, 32);
+        }
+
+        article ul {
+            margin: 8px 0;
+            padding-left: 10px;
+            list-style: none;
+        }
+
+        article ul li {
+            margin: 3px;
+        }
+
+        article ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .article_right {
+            width: 298px;
+           
+        }
+        
+     .article_right {
+            width: 688px;
+           overflow: scroll;
+            color: rgb(31, 65, 46);
+            background-color: rgb(95, 160, 135);
+        }
+
+        aside {
+            float: right;
+            width: 270px;
+            height: 574px;
+            background: pink;
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            /* background: #d6e9c6; */
+        }
+        img:hover{
+            z-index: 10;
+        }
+        #nuhan1{
+            width: 150px;height: 160px;
+            position: absolute;
+            top: 250px;
+            left: 5px;
+        }
+        #nuhan2{width: 150px;height: 160px;
+            position: absolute;
+            top: 300px;
+            left: 75px;
+        }
+        #nuhan3{width: 150px;height: 160px;
+            position: absolute;
+            top: 250px;
+            left: 145px;
+        }
+        #laoshe1{
+            position: absolute;
+            top: 540px;left: 10px;
+        }
+        #laoshe2{
+            position: absolute;
+            top: 570px;left: 30px;
+        }
+        #laoshe3{
+            position: absolute;
+            top: 640px;left: 40px;
+        }
+        #laoshe4{
+            position: absolute;
+            top: 638px;left: 120px;
+        }
+        #laoshe5{
+            position: absolute;
+            top: 570px;left: 140px;
+        }
+        #laoshe6{
+            position: absolute;
+            top: 535px;left: 110px;
+        }
+        .laoshe{
+            width: 150px;height: 100px;
+        }
+        
+      Marquee{
+          color: rgb(24, 61, 29);
+      }
+     #bianlan{
+         width: 270px;height: 574px;
+     }
+     #yejiao{
+         width: 100%;
+         height: 150px;
+     }
+     #beijing{
+         width: 100%;height: 100%;
+     }
+     .article_left{
+         background-color: rgb(52, 119, 99);
+     }
+     #jieshao{
+         width: 200px;height: 100px;
+     }
+     
+        body {
+            height: 2000px;
+        }
+    #xingming{
+        color: rgb(35, 82, 64);
+        text-align: center;
+    }
+    
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .loginHeader {
+            width: 100%;
+            line-height: 30px;
+            text-align: right;
+            background-color: rgb(23, 107, 55);
+            border-bottom: 1px solid gray;
+        }
+
+        .loginHeader a {
+            color: aliceblue;
+            padding-right: 20px;
+            font-size: 22px;
+        }
+
+        .login {
+            width: 512px;
+            height: 280px;
+            border: 1px solid #ebebeb;
+            box-shadow: 0 0 20px #ddd;
+            /* 脱离文档流 */
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            background-color: white;
+            z-index: 9999;
+            margin-left: -256px;
+            margin-top: 140px;
+            display: none;
+        }
+
+        .loginTitle {
+            width: 100%;
+            height: 40px;
+            margin: 10px 0 0 0;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            position: relative;
+            cursor: move;
+            /* 不让文字被选中 */
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .closeButton {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 32px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            position: absolute;
+            top: -26px;
+            right: -16px;
+        }
+
+        .loginContent {
+            margin-top: 20px;
+        }
+
+        .loginInput {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            margin: 5px 50px;
+            font-size: 16px;
+        }
+
+        .loginInput label {
+            font-weight: bolder;
+        }
+
+        .listInput {
+            width: 320px;
+            height: 30px;
+        }
+
+        .loginButton {
+            width: 50%;
+            margin: 30px auto 0 auto;
+            line-height: 40px;
+            font-size: 15px;
+            border: #ebebeb 1px solid;
+            text-align: center;
+        }
+
+        .loginBackground {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #000;
+            filter: alpha(opacity=30);
+            opacity: 0.3;
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+       <div id="xingming">  前：张萌萌201916180302  我：王诗人201916180304  后：邹湘宇201916180305</div><p></p>
+       
+        <div class="loginHeader">
+            <a id="link" href="javascript:void(0);">点我一下(๑´∀`๑)</a>
+        </div>
+        <div id="login" class="login" style>
+            <div id="title" class="loginTitle">
+                哦豁，啥也没有
+               <img src="biaoqing.jpg" alt="">
+                <!-- <span>
+                    <a id="closeButton" class="closeButton" href="javascript:void(0);">关闭</a>
+                </span> -->
+            </div>
+            <!-- <div class="loginContent">
+                 <div class="loginInput">
+                    <label>用户名：</label>
+                    <input type="text" placeholder="请输入用户名" id="username" class="listInput" name="info[username]">
+                </div>
+                <div class="loginInput">
+                    <label>密 码：</label>
+                    <input type="password" placeholder="请输入登录密码" id="password" class="listInput" name="info[password]">
+                </div> 
+            </div>
+            <div id="loginButton" class="loginButton">
+                <a href="javascript:void(0);" id="loginSubmit">登录</a>
+            </div> -->
+        </div>
+    
+        <!-- 遮盖层 -->
+        <div id="bg" class="loginBackground" style></div>
+    
+        <script>
+            var login = document.getElementById('login');
+            var bg = document.getElementById('bg');
+    
+            // 弹出登录窗口
+            var link = document.getElementById('link');
+            link.onclick = function () {
+                login.style.display = 'block';
+                bg.style.display = 'block';
+            }
+    
+            // 关闭登录窗口
+            document.getElementById('closeButton').onclick = function () {
+                login.style.display = '';
+                bg.style.display = '';
+            }
+    
+            // 拖曳
+            var title = document.getElementById('title');
+            title.onmousedown = function (ev) {
+                ev = ev || window.event;
+    
+                var x = getPage(ev).pageX - login.offsetLeft;
+                var y = getPage(ev).pageY - login.offsetTop;
+    
+                document.onmousemove = function (ev) {
+                    // 不考虑禁止移出窗口的情况
+                    // ev = ev || window.event;
+    
+                    // login.style.left = getPage(ev).pageX - x + 256 + 'px';
+                    // login.style.top = getPage(ev).pageY - y - 140 + 'px';
+    
+                    // 考虑禁止移出窗口的情况
+                    ev = ev || window.event;
+    
+                    var loginX = getPage(ev).pageX - x;
+                    var loginY = getPage(ev).pageY - y;
+    
+                    if (loginX < 0)
+                        loginX = 0;
+                    if (loginY < 16)
+                        loginY = 16;
+    
+                    if (loginX > window.innerWidth - login.offsetWidth - 50)
+                        loginX = window.innerWidth - login.offsetWidth - 50;
+                    if (loginY > window.innerHeight - login.offsetHeight)
+                        loginY = window.innerHeight - login.offsetHeight;
+    
+                    login.style.left = loginX + 256 + 'px';
+                    login.style.top = loginY - 140 + 'px';
+    
+                }
+            }
+    
+            document.onmouseup = function () {
+                document.onmousemove = '';
+            }
+    
+            function getPage(ev) {
+                return {
+                    pageX: ev.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft),
+                    pageY: ev.clientY + (document.documentElement.scrollTop || document.body.scrollTop)
+                }
+            }
+        </script>
+    
+    
+     
+       <!--页眉-->
+        <div class="spacebar"></div>
+
+        <div id="logo">
+            <a href="https://www.google.com.tw/"> <img src="jieshao.png" alt="自由" width="100%"> </a>
+        </div>
+        
+        <div id="banner">
+        <img id="beijing" src="yejiao.png" alt="">
+        </div>
+
+        <div id="tools">
+        <img id="jieshao" src="jieshao.png" alt="">
+        </div>
+
+        <div class="spacebar"></div>
+
+        <!-- <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">部门</a></li>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <div class="spacebar"></div>
+
+    <!--<div id="content">-->
+
+        <section>
+            <!--章节-->
+            <div class="leftbox">
+                <div class="title">
+                    <Marquee>🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
+                </div>
+
+                <article class="article_left">
+                    <ul >
+                        <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.13.40724e35CAiqLF&id=607301310323&cm_id=140105335569ed55e27b&abbucket=15">披萨链接</a>
+                        <img id="nuhan1" src="pisa.jpg" alt="">
+                        <img id="nuhan2" src="pisa1.jpg" alt="">
+                        <img id="nuhan3" src="pisa2.jpg" alt="">
+                        <!-- <li><a href="#"></a></li>
+                        <li><a href="#">芳芳</a></li>
+                        <li><a href="#">澜澜</a></li>
+                        <li><a href="#">美美</a></li>
+                        <li><a href="#">晴晴</a></li> -->
+
+                        <!-- <li><a href="#">冰冰</a></li>
+                        <li><a href="#">芳芳</a></li>
+                        <li><a href="#">澜澜</a></li>
+                        <li><a href="#">美美</a></li>
+                        <li><a href="#">晴晴</a></li> -->
+                    </ul>
+                </article>
+            </div>
+
+            <div class="rightbox">
+                <div class="title">
+                    <Marquee>🌟详细介绍🌟</Marquee>
+                </div>
+
+                <article class="article_right">
+                  &emsp;&emsp; 披萨是广受全球食客喜爱的食物，在国内也拥有不少的粉丝。
+
+                  不久前，腾空甩披萨饼皮的技术被列入联合国科教文组织的世界文化遗产名录。 小小一个饼，不可小觑的身价。市面上流行的披萨源自意大利的拿坡里。薄薄脆脆的饼皮，涂上番茄酱，撒上乳酪、新鲜番茄片、罗勒叶，传统的意大式披萨，爽脆可口。厚皮披萨大部分流行在美国，特别是芝加哥。厚厚的饼皮，烤的像吐司面包一样，很有饱足感。除了现做的披萨，上个世纪各大食品公司还推出了冷冻披萨，在家里的烤箱或微波炉里随烤随吃。在意大利，餐厅内用的披萨是用刀叉吃的，外卖的则拿在手上吃。现代生活注重休闲自在，大部分的人都是手一拿便吃将起来。披萨口味不胜枚举。有放满了青菜、蘑菇、小番茄、橄榄，专为素食者打造的蔬菜披萨，以及用多种乳酪烘烤的牵丝乳酪披萨。无肉不欢的食客可以选择经典的意大利香肠片披萨（pepperoni pizza）,或者香肠片加绞肉披萨。喜欢重口味的朋友，还可以在上面撒上起司粉和辣椒粉。夏威夷披萨，主要的佐料是火腿片与凤梨，甜酸爽口。烤鸭披萨，散发着鸭肉独特的香味。 这些都是为了迎合亚洲人口味而推出的创意披萨。另外还有迷你披萨。个儿小小的，是派对或鸡尾酒会中颇受欢迎的一口点心。欧美人士喜欢甜食，甜点披萨的推出也就不令人意外了。把烤好饼皮切成小方条，撒上肉桂糖粉，趁热吃，相当可口。讲究点的，在饼皮抹上果酱、糖霜，撒上浆果，杏仁片，白糖粉，吸引甜食者的味蕾。这么多种披萨，您喜欢那种口味的呢,就此打住。吃咱们佰斯特全自动披萨机制作的披萨去咯
+                </article>
+            </div>
+
+            <div class="spacebar"></div>
+
+            <div class="leftbox">
+                <div class="title">
+                    <Marquee>🌟美食推荐🌟&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🌟美食推荐🌟</Marquee>
+                </div>
+
+                <article class="article_left">
+                    <ul>
+                        <!-- <li><a href="#">冰冰</a></li>
+                        <li><a href="#">芳芳</a></li>
+                        <li><a href="#">澜澜</a></li>
+                        <li><a href="#">美美</a></li>
+                        <li><a href="#">晴晴</a></li>
+
+                        <li><a href="#">冰冰</a></li>
+                        <li><a href="#">芳芳</a></li>
+                        <li><a href="#">澜澜</a></li>
+                        <li><a href="#">美美</a></li>
+                        <li><a href="#">晴晴</a></li> -->
+                        <a href="https://s.taobao.com/search?q=%E9%85%B1%E6%9D%BF%E9%B8%AD&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20201123&ie=utf8&cps=yes&ppath=20000%3A47125335">酱板鸭</a>
+                        <img id="laoshe1" class="laoshe" src="jiangbanya.jpg" alt="">
+                        <img id="laoshe2" class="laoshe" src="jiangbanya1.jpg" alt="">
+                        <img id="laoshe3" class="laoshe" src="jiangbanya2.jpg" alt="">
+                        <img id="laoshe4" class="laoshe" src="jiangbanya3.jpg" alt="">
+                        <img id="laoshe5" class="laoshe" src="jiangbanya4.jpg" alt="">
+                        <img id="laoshe6" class="laoshe" src="jiangbanya5.jpg" alt="">
+                        
+                    </ul>
+                </article>
+            </div>
+
+            <div class="rightbox">
+                <div class="title">
+                    <Marquee>🌟详细介绍🌟</Marquee>
+                </div>
+
+                <article class="article_right">
+                    常德酱板鸭一名来历的确切文字记载最早始于1988年出版的《常德风物大观》，常德酱板鸭制作工艺历史悠久，口味独特，并广泛流传常德民间，尤近年来开始走入市场，并被外人所熟知、喜爱，常出现抢购断货之盛景，实为常德不可多得的地方优质特产。丰富的自然资源与厚重历史积淀相结合，诞生了一道道脍人口的湖湘美食，常德酱板鸭既是其中极具地方特色的代表之一。常德酱板鸭是在特定的自然环境下，采用放养或半放养一年以上的洞庭麻鸭为主料，经过酱、腌、烤、卤等15道工序，加上传承上千年的卤水古法配方工艺，生产加工出来的。“常德酱板鸭”均选用洞庭湖区蛋鸭为材料、配以30余种中成药、10余种香料、经过15道工序精致而成，有着麻辣香脆的特点，回味悠长。具有健脾、开胃、减肥之独到功效。 目前，常德酱板鸭畅销北京、天津、深圳、珠海、海口、贵阳等全国各地。常德酱板鸭一九九九年被评为湖南省首届农博会优质产品奖、二OOO年十月荣获首届中国西部粮酒副食展销会金奖、常德市首届食品工业博览会金奖、湖南省第二届名优特新农副产品博览会银奖等各项荣誉。
+
+                    产品品质特征
+                    
+                    常德酱板鸭通体红光油亮，色泽呈深红或酱褐色，无可见杂质。头颈细长并向左弯曲叠压在左翼下，撑板成型完整，形体扁平柔和，有质感。闻之酱香浓郁，香气扑鼻，入口香辣爽口，咸麻适中，辣味后劲十足；嚼之皮酥肉紧，肥膘油脂极少，感觉不腻不腥，极有嚼劲，回味悠长，久吃不厌。因其兼具香、辣、鲜、醇的独特风味，常德酱板鸭成为一张金色的地方名片。
+                    
+                    地标地理
+                    
+                    常德地处湖南西北部，东临洞庭，西接黔渝，南通长沙，北连荆襄，三分之二以上为洞庭湖淤积平原。常德酱板鸭能够被世人所称道，跟当地出产的优质本地麻鸭有着密切联系。主产地武陵区地处洞庭湖西岸腹地，气候温和，河湖纵横，沟港交织，水域辽阔，水草丰富，加之稻田又是牧鸭的优良场所，是春撒一把种，秋收一仓粮的好地方，自古就有“洞庭鱼米之乡”的美誉，自古就是鸭禽生长栖息的肥美之地。
+                    
+                    加工常德酱板鸭的主料——本地麻鸭，以嬉水性、合群性、习惯野外觅食为主要生活特征，饲料以稻谷、田螺、鱼虾、蚯蚓和各种水草、昆虫为主，在15℃-30℃的温度环境下生长较快。本地麻鸭坚持采用放养或半放养的方式进行养殖，活泼、健壮、个体周正，其肉质纤维含量多，肉质紧密，脂肪含量少，蛋白质含量高，富含钾、硒等微量元素以及A族、E族维生素等，是加工后能体现出常德酱板鸭肉香骨脆、嚼劲绵长特色的主要因素。常德的武陵、安乡等滨湖地区独特的地貌和自然气候条件是养殖本地麻鸭的理想区域，宽广的湖面、稻田和众多的沟渠，优良的水质和空气质量，为本地麻鸭提供了良好的繁育环境，肥沃的土壤，广阔的稻田，丰富的鱼虾、蚌螺、水草、昆虫等生物资源，为本地麻鸭提供了丰富的天然食物。
+                    
+                    文化背景
+                    
+                    据当地民俗文化专家曹先辉在《话说常德酱板鸭》一文中考证：历史上洞庭湖地区的粮食和沅水流域的土贡，都要经过常德大码头走水路运往楚国的都城郢都，贡品中就包括常德的酱板鸭。常德酱板鸭的制作在明代已经成熟，但最初名为泰运酱板鸭。
+                    
+                    常德酱板鸭一名来历的确切文字记载最早始于1988年出版的《常德风物大观》："常德酱板鸭制作工艺历史悠久，口味独特，并广泛流传常德民间，尤近年来开始走入市场，并被外人所熟知、喜爱，常出现抢购断货之盛景，实为常德不可多得的地方优质特产。"
+                    
+                    丰富的自然资源与厚重历史积淀相结合，诞生了一道道脍人口的湖湘美食，常德酱板鸭既是其中极具地方特色的代表之一。常德酱板鸭是在特定的自然环境下，采用放养或半放养一年以上的洞庭麻鸭为主料，经过酱、腌、烤、卤等15道工序，加上传承上千年的卤水古法配方工艺，生产加工出来的。
+                    
+                    营养价值
+                    
+                    《本草纲目》云：“治水，利小便，宜用青头雄鸭，治虚劳热毒，宜用乌骨白鸭。”《滇南本草》中说道：“老鸭同猪蹄煮食，补气而肥体，同鸡煮食，治血晕头痛。”鸭的营养价值很高，属凉性，科学的食用具有滋润养胃，平肝去火，健体美颜，益气养血，除湿去烦，开胃健脾，醒目安神，活血化淤，兹阴益肾之功效，深受人们青睐。
+                    
+                   
+
+
+                </article>
+            </div>
+          
+            
+        </section>
+
+        <aside>
+            <img id="bianlan" src="yejiao7.jpg" alt="">
+        </aside>
+
+    <!--</div>-->
+
+    <div class="spacebar"></div>
+
+    <footer>
+        <img id="yejiao" src="yejiao.png" alt="">
+    </footer>
+
+</div>
+
+
+     <!-- <img id="img" src="tianshi.gif" alt="" style="position: absolute; left: 298px; top: 465px;"> 
+
+    <script>
+        var img = document.getElementById("img");
+        // 不要使用 document.body.onmousemove ，因为 body 无法充满页面
+        document.onmousemove = function(ev) {
+            ev = ev || window.event;
+
+            img.style.position = "absolute";
+
+            // event.clientY 指鼠标在当前窗口的Y轴位置，event.pageY 指鼠标在当前网页的Y轴位置
+            img.style.left = ev.pageX + 'px';
+            img.style.top = ev.pageY + 'px';
+        }
+    </script> -->
+
+
+</body></html>
